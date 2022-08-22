@@ -1,0 +1,7 @@
+# Error Messages
+errorMessage: Aadhar Number not Found
+
+##logging format
+#logging:
+#  level:
+#  '[com.pension]': INFO
