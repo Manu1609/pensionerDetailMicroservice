@@ -20,8 +20,8 @@ public class PensionController {
 	private PensionServiceImpl pensionService;
 	
 	@GetMapping(value="/welcome")
-	public String welcome() {
-		return "welcome Pemsion Service";
+	public ResponseEntity<String> welcome() {
+		return new ResponseEntity<String>(HttpStatus.OK);
 	}
 
 	@GetMapping(value = "/find/{aadhar}")
