@@ -18,6 +18,11 @@ public class PensionController {
 
 	@Autowired
 	private PensionServiceImpl pensionService;
+	
+	@GetMapping(value="/welcome")
+	public String welcome() {
+		return "welcome Pemsion Service";
+	}
 
 	@GetMapping(value = "/find/{aadhar}")
 	public ResponseEntity<PensionerDetail> findPensionerByAadhar(@PathVariable("aadhar") String aadhar) {
