@@ -19,9 +19,9 @@ public class PensionController {
 	@Autowired
 	private PensionServiceImpl pensionService;
 	
-	@GetMapping(value="/welcome")
-	public ResponseEntity<String> welcome() {
-		return new ResponseEntity<String>(HttpStatus.OK);
+	@GetMapping("/healthcheck")
+	public ResponseEntity<String> healthcheck() {
+		return new ResponseEntity<>("Healthcheck-ok",HttpStatus.OK);
 	}
 
 	@GetMapping(value = "/find/{aadhar}")
