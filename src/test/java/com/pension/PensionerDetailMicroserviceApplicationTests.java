@@ -54,18 +54,6 @@ class PensionerDetailMicroserviceApplicationTests {
 		assertThat(assertThat(pensionerDetail).isNotNull());
 	}
 
-//	@Test
-//	void testEqualAndHashCode() throws ParseException {
-//		PensionerDetail pensionerDetail1 = new PensionerDetail("Parthik", DateUtil.parseDate("16-09-1998"),
-//				"BSDPS1495K", Double.parseDouble("29000"), Double.parseDouble("1200"), "self", "SBI",
-//				Long.parseLong("12345678"), "private");
-//		PensionerDetail pensionerDetail2 = new PensionerDetail("Parthik", DateUtil.parseDate("16-09-1998"),
-//				"BSDPS1495K", Double.parseDouble("29000"), Double.parseDouble("1200"), "self", "SBI",
-//				Long.parseLong("12345678"), "private");
-//
-//		assertThat(assertThat(pensionerDetail1).isEqualTo(pensionerDetail2));
-//	}
-//
 	@Test
 	void testNotEqualAndHashCode() throws ParseException {
 		PensionerDetail pensionerDetail1 = new PensionerDetail("Shubhm", DateUtil.parseDate("16-09-1998"), "BSDPS1495K",
