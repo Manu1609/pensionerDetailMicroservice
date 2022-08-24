@@ -19,7 +19,7 @@ public class PensionController {
 	@Autowired
 	private PensionServiceImpl pensionService;
 	
-	@GetMapping("/healthcheck")
+	@GetMapping(value = "/healthcheck")
 	public ResponseEntity<String> healthcheck() {
 		return new ResponseEntity<>("Healthcheck-ok",HttpStatus.OK);
 	}
