@@ -31,33 +31,4 @@ class PensionControllerTest {
 	@MockBean
 	private PensionServiceImpl service;
 
-//	@Test
-//	void testFindPensionerFromController() throws Exception {
-//		
-//		final String aadhar = "123456789032";
-//		PensionerDetail pensionerDetail = new PensionerDetail("Yuvaraj",DateUtil.parseDate("16-04-1999"),
-//				"TYUOI09874",Double.parseDouble("70000"),Double.parseDouble("12002"),"self","Statebank",Long.parseLong("12345697"),"public");
-//		when(service.findPensionerByAadhar(aadhar)).thenReturn(pensionerDetail);
-//		mockMvc.perform(get("/find/{aadhar}",aadhar)
-//				.accept(MediaType.APPLICATION_JSON))
-//				.andExpect(status().isOk())
-//				.andExpect(jsonPath("$.name", Matchers.equalTo("Yuvaraj")))
-//				.andExpect(jsonPath("$.pan", Matchers.equalTo("TYUOI09874")))
-//				.andExpect(jsonPath("$.dob", Matchers.equalTo("16-04-1999")))
-//				.andExpect(jsonPath("$.accountNumber", Matchers.equalTo("12345697")));
-//	}
-	
-//	@Test
-//	void testForAadharNumberNotFound() throws Exception {
-//		final String aadhar = "123456666080";
-//		
-//		when(service.findPensionerByAadhar(ArgumentMatchers.any()))
-//		.thenThrow(new NotFoundException(AADHAR_NUMBER_NOT_FOUND));
-//		
-//		mockMvc.perform(get("/find/{aadhar}",aadhar)
-//				.accept(MediaType.APPLICATION_JSON))
-//		.andExpect(status().is4xxClientError())
-//		.andExpect(jsonPath("$.message", Matchers.equalTo(AADHAR_NUMBER_NOT_FOUND)));
-//	}
-
 }
